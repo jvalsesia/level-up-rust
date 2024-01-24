@@ -1,16 +1,25 @@
-# level-up-rust
-Rust advanced 
+# Level Up Rust: Challenge 6
 
-# Coding Challenges branches
-```sh
-git branch -vv
+Your challenge is to implement code that calculates the
+value of a hand of cards for the game of blackjack.
+
+Cards have the following values:
+
+- Cards **2** to **9** have a value equal to their number
+- Face cards (the **King**, **Queen** and **Jack** have a value of 10
+- The **Ace** has a value of 11, unless the total value of
+  the hand exceeds 21. If that happens, the card's value is 1.
+- Suits are not significant
+- There are no other cards, such as Jokers, to consider
+
+## Testing your code
+
+To test your solution, use `cargo test`.
+
+```console
+$ cargo test
+...
 ```
-- **01_01:** Calculate the median
-- **01_02:** Find unique items
-- **01_03:** Print any text type
-- **01_04:** Case-insensitive sort
-- **01_05:** Convert text to Morse code
-- **01_06:** Value of a hand of cards
 
 # References
 https://github.com/LinkedInLearning/level-up-rust-3041143
