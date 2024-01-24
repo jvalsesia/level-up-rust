@@ -13,6 +13,7 @@ git branch -vv
 - **01_06:** Value of a hand of cards
 - **01_07:** Has a deadline been reached?
 - **01_08:** Convert between Celsius and Fahrenheit
+- **01_09:** Sum a list of numbers with missing values
 
 # References
 https://github.com/LinkedInLearning/level-up-rust-3041143
