@@ -19,8 +19,9 @@ impl MorseCode for String {
         use Pulse::*;
 
         let mut msg = Vec::with_capacity(self.len());
+
         for c in self.chars() {
-            let letter = match c {
+            let morse = match c {
                 'A' | 'a' => vec![Short, Long],
                 'B' | 'b' => vec![Long, Short, Short, Short],
                 'C' | 'c' => vec![Long, Short, Long, Short],
@@ -28,7 +29,7 @@ impl MorseCode for String {
                 'E' | 'e' => vec![Short],
                 'F' | 'f' => vec![Short, Short, Long, Short],
                 'G' | 'g' => vec![Long, Long, Short],
-                'H' | 'h' => vec![Short, Short, Short, Short, Short],
+                'H' | 'h' => vec![Short, Short, Short, Short],
                 'I' | 'i' => vec![Short, Short],
                 'J' | 'j' => vec![Short, Long, Long, Long],
                 'K' | 'k' => vec![Long, Short, Long],
@@ -60,9 +61,9 @@ impl MorseCode for String {
                 '0' => vec![Long, Long, Long, Long, Long],
                 _ => continue,
             };
-
-            msg.push(letter);
+            msg.push(morse);
         }
+
         msg
     }
 }
@@ -97,7 +98,7 @@ fn hello_world() {
     use Pulse::*;
 
     let expected = vec![
-        vec![Short, Short, Short, Short, Short],
+        vec![Short, Short, Short, Short],
         vec![Short],
         vec![Short, Long, Short, Short],
         vec![Short, Long, Short, Short],
@@ -109,7 +110,9 @@ fn hello_world() {
         vec![Long, Short, Short],
     ];
 
-    let actual = "Hello, world".to_string().to_morse_code();
+    let source = "Hello, world";
+    let actual = source.to_string().to_morse_code();
+
     assert_eq!(actual, expected);
 }
 
@@ -117,6 +120,8 @@ fn hello_world() {
 fn whole_alphabet() {
     let alphabet = "abcdefghijklmnopqrstuvwxyz1234567890".to_string();
 
-    alphabet.to_morse_code();
-    alphabet.to_uppercase().to_morse_code();
+    let lower = alphabet.to_morse_code();
+    let upper = alphabet.to_uppercase().to_morse_code();
+
+    assert_eq!(lower, upper)
 }
