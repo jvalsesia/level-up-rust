@@ -1,3 +1,4 @@
+// use time::{Date, Month, Instant, Duration};
 use chrono::{Date, Local};
 use chrono::{Duration, TimeZone};
 
@@ -12,7 +13,7 @@ trait Deadline {
 
 impl Deadline for ImportantEvent {
     fn is_passed(&self) -> bool {
-        todo!();
+        self.when < Local::today()
     }
 }
 
