@@ -1,12 +1,7 @@
 fn sum_with_missing(numbers: Vec<Option<i32>>) -> i32 {
-    let mut sum = 0;
-    for elem in numbers.iter() {
-        match elem {
-            None => { sum += 0 }
-            Some(_) => { sum += elem.unwrap() }
-        }
-    }
-    sum
+    numbers.iter()
+        .map(|x| x.unwrap_or(0))
+        .sum()
 }
 
 fn main() {
