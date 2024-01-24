@@ -1,18 +1,19 @@
-# level-up-rust
-Rust advanced 
+# Level Up Rust: Challenge 8
 
-# Coding Challenges branches
-```sh
-git branch -vv
+Your challenge is to implement code to convert between two temperature 
+scales: celsius and fahrenheit. 
+
+To make this more challenging than implementing the mathematical formula,
+you will need to work with an intermediate type that encodes the temperature.
+
+## Testing your solution
+
+Use `cargo test` to evaluate yourself:
+
+```console
+$ cargo test
+...
 ```
-- **01_01:** Calculate the median
-- **01_02:** Find unique items
-- **01_03:** Print any text type
-- **01_04:** Case-insensitive sort
-- **01_05:** Convert text to Morse code
-- **01_06:** Value of a hand of cards
-- **01_07:** Has a deadline been reached?
-- **01_08:** Convert between Celsius and Fahrenheit
 
 # References
 https://github.com/LinkedInLearning/level-up-rust-3041143
