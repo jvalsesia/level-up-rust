@@ -1,19 +1,21 @@
-# level-up-rust
-Rust advanced 
+# Rust Code Challenges: Challenge 10
 
-# Coding Challenges branches
-```sh
-git branch -vv
+Your challenge is to parse two strings as dates,
+then calculate the number of whole weeks between them.
+
+## Testing your solution
+Use `cargo add chrono`.
+Use `cargo test` to evaluate yourself:
+
+```console
+$ cargo test
+...
+running 3 tests
+test one_week ... ok
+test past ... ok
+test same_day ... ok
+...
 ```
-- **01_01:** Calculate the median
-- **01_02:** Find unique items
-- **01_03:** Print any text type
-- **01_04:** Case-insensitive sort
-- **01_05:** Convert text to Morse code
-- **01_06:** Value of a hand of cards
-- **01_07:** Has a deadline been reached?
-- **01_08:** Convert between Celsius and Fahrenheit
-- **01_09:** Sum a list of numbers with missing values
 
 # References
 https://github.com/LinkedInLearning/level-up-rust-3041143
