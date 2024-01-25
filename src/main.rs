@@ -5,11 +5,44 @@ struct Isbn {
     digits: Vec<u8>,
 }
 
+#[derive(Debug)]
+enum InvalidIsbn {
+    TooLong,
+    TooShort,
+    InvalidCharacter(usize, char),
+    FailedChecksum,
+}
+
 impl FromStr for Isbn {
-    type Err = (); // TODO: replace with appropriate type
+    type Err = InvalidIsbn;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
-        todo!();
+        let mut digits = vec![];
+
+        for (i, c) in s.char_indices() {
+            match c {
+                '-' => continue,
+                '0'..='9' => digits.push(c.to_digit(10).unwrap() as u8),
+                _ => {
+                    return Err(InvalidIsbn::InvalidCharacter(i, c));
+                }
+            }
+        }
+
+        if digits.len() < 13 {
+            return Err(InvalidIsbn::TooShort);
+        } else if digits.len() > 13 {
+            return Err(InvalidIsbn::TooLong);
+        };
+
+        if digits[12] != calculate_check_digit(&digits) {
+            return Err(InvalidIsbn::FailedChecksum);
+        }
+
+        Ok(Isbn {
+            digits,
+            raw: s.to_string(),
+        })
     }
 }
 
@@ -21,13 +54,29 @@ impl std::fmt::Display for Isbn {
 
 // https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-13_check_digit_calculation
 fn calculate_check_digit(digits: &[u8]) -> u8 {
-    todo!()
+    const WEIGHTS: [u8; 12] = [1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3];
+
+    let weights_applied: u32 = digits
+        .iter()
+        .zip(WEIGHTS.iter())
+        .map(|(&x, &y)| x * y)
+        .map(|x| x as u32)
+        .sum();
+
+    let check_digit = 10 - (weights_applied % 10);
+
+    match check_digit {
+        10 => 0_u8,
+        m => m as u8,
+    }
 }
 
 fn main() {
-    let rust_in_action: Isbn = "978-3-16-148410-0".parse().unwrap();
+    let rust_in_action: Isbn = "978-3-16-148410-0"
+        .parse()
+        .unwrap();
 
-    println!("Rust in Action's ISBN-13 ({})is valid!", rust_in_action);
+    println!("Rust in Action's ISBN-13 ({}) is valid!", rust_in_action);
 }
 
 #[test]

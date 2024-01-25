@@ -7,9 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ad7c59-dd95-4a88-accd-06f69a0690f5" name="Changes" comment="Calculate the number of weeks between two dates">
+    <list default="true" id="83ad7c59-dd95-4a88-accd-06f69a0690f5" name="Changes" comment="Validate an ISBN number - Begin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +185,7 @@
       <updated>1706128560753</updated>
       <workItem from="1706128562078" duration="1113000" />
       <workItem from="1706195749149" duration="20000" />
-      <workItem from="1706195770222" duration="166000" />
+      <workItem from="1706195770222" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="Sum a list of numbers with missing values - Begin">
       <option name="closed" value="true" />
@@ -228,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706195849163</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Validate an ISBN number - Begin">
+      <option name="closed" value="true" />
+      <created>1706196090539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706196090539</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +258,7 @@
     <MESSAGE value="Sum a list of numbers with missing values - My version" />
     <MESSAGE value="Sum a list of numbers with missing values - End" />
     <MESSAGE value="Calculate the number of weeks between two dates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculate the number of weeks between two dates" />
+    <MESSAGE value="Validate an ISBN number - Begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validate an ISBN number - Begin" />
   </component>
 </project>
