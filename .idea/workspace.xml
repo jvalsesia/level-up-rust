@@ -7,10 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ad7c59-dd95-4a88-accd-06f69a0690f5" name="Changes" comment="Calculate the number of weeks between two dates - End">
-      <change afterPath="$PROJECT_DIR$/src/large_graph.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="83ad7c59-dd95-4a88-accd-06f69a0690f5" name="Changes" comment="Travel planner - Begin">
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +22,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jvalsesia"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a8dfc8d8-44b3-483b-8685-3c0ade877418" />
+        <option name="url" value="https://github.com/jvalsesia/level-up-rust.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="65iuc2jx" />
@@ -187,7 +198,7 @@
       <updated>1706128560753</updated>
       <workItem from="1706128562078" duration="1113000" />
       <workItem from="1706195749149" duration="20000" />
-      <workItem from="1707153257965" duration="88000" />
+      <workItem from="1707153257965" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="Sum a list of numbers with missing values - Begin">
       <option name="closed" value="true" />
@@ -213,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706129571257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Travel planner - Begin">
+      <option name="closed" value="true" />
+      <created>1707153385962</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707153385962</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +254,7 @@
     <MESSAGE value="Sum a list of numbers with missing values - Begin" />
     <MESSAGE value="Sum a list of numbers with missing values - My version" />
     <MESSAGE value="Sum a list of numbers with missing values - End" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sum a list of numbers with missing values - End" />
+    <MESSAGE value="Travel planner - Begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Travel planner - Begin" />
   </component>
 </project>
