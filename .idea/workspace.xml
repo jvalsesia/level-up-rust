@@ -7,9 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ad7c59-dd95-4a88-accd-06f69a0690f5" name="Changes" comment="Calculate the number of weeks between two dates - End">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="83ad7c59-dd95-4a88-accd-06f69a0690f5" name="Changes" comment="Run-length encoding - Begin">
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706129571257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Run-length encoding - Begin">
+      <option name="closed" value="true" />
+      <created>1707152800088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707152800088</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +239,7 @@
     <MESSAGE value="Sum a list of numbers with missing values - Begin" />
     <MESSAGE value="Sum a list of numbers with missing values - My version" />
     <MESSAGE value="Sum a list of numbers with missing values - End" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sum a list of numbers with missing values - End" />
+    <MESSAGE value="Run-length encoding - Begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Run-length encoding - Begin" />
   </component>
 </project>
